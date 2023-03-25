@@ -11,11 +11,6 @@ import com.dicoding.tourismapp.core.ui.ViewModelFactory
 import com.dicoding.tourismapp.databinding.ActivityDetailTourismBinding
 
 class DetailTourismActivity : AppCompatActivity() {
-
-    companion object {
-        const val EXTRA_DATA = "extra_data"
-    }
-
     private lateinit var detailTourismViewModel: DetailTourismViewModel
     private lateinit var binding: ActivityDetailTourismBinding
 
@@ -57,5 +52,9 @@ class DetailTourismActivity : AppCompatActivity() {
         } else {
             binding.fab.setImageDrawable(ContextCompat.getDrawable(this, R.drawable.ic_not_favorite_white))
         }
+    }
+
+    companion object {
+        const val EXTRA_DATA = "extra_data"
     }
 }
